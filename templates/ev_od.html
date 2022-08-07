@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block context %}
+<div class="container">
+      
+    
+     <form action="" method="post">
+        {% csrf_token %}
+        {% if error %}
+        <div class="alert alert-danger mt-2" role="alert">
+            Please Enter  the Value
+        </div>
+        {% endif %}
+        <label for="">value1</label>
+        <input type="text" name="num1">
+        <br>
+        <br>
+        <button type="submit" >evenandodd</button>
+        <br>
+        <br>
+        <label for="">output</label>
+        <input type="text" value="{{c}}">
+     </form>
+</div>
+{% endblock %}

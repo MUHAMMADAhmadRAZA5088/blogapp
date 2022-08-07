@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+    
+{% block context %}
+
+
+    <div class="container bg-success p-4" >
+        <h1 class="text-center mt-3 text-white">Form</h1>
+          <div class="row">
+            <div class="col-12 text-white ">
+                <form>
+                    <div>
+                    <label for="">Value1</label>
+                    <input placeholder="Enter the number" type="text" name="num1" class="form-control ">
+                    </div>
+                    <br>
+                    <div>
+                    <label for="">Value2</label>
+                    <input placeholder="Enter the number" type="text" name="num2" class="form-control ">
+                    </div>
+                    <br>
+                    <div class="d-grid">
+                    <button type="submit" class=" bg-warning">Save</button>
+                   </div>
+                   <br>
+                   <div class="row">
+                    <div class="col-6">
+                    <label for="">sum: Output</label>
+                    <input  type="text" value="{{a}}">
+                    </div>
+                    <div class="col-6">
+                      <label for="">subtraction: Output</label>
+                      <input type="text" value="{{b}}">
+                      </div>
+                   </div>
+                    
+                    
+                </form>
+            </div>
+        
+          </div>
+        </div>
+ {% endblock %}

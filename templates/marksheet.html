@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block context %}
+<h1 class="text-center">Marks Sheet</h1>
+<form action="" method="post" >
+    {% csrf_token %}
+    <div>
+        <label for="">subject 1</label>
+        <input type="text" name="num1" placeholder="your marks">
+        <input type="text" name="mun1" placeholder="outoff">
+    </div>
+    <br>
+    <div>
+        <label for="">subject 2</label>
+        <input type="text" name="num2" placeholder="your marks">
+        <input type="text" name="mun2" placeholder="outoff">
+    </div>
+    <br>
+    <div>
+        <label for="">subject 3</label>
+        <input type="text" name="num3" placeholder="your marks">
+        <input type="text" name="mun3" placeholder="outoff">
+    </div>
+    <br>
+    <div>
+        <label for="">subject 4</label>
+        <input type="text" name="num4" placeholder="your marks">
+        <input type="text" name="mun4" placeholder="outoff">
+    </div>
+    <br>
+    <div>
+        <label for="">subject 5</label>
+        <input type="text" name="num5" placeholder="your marks">
+        <input type="text" name="mun5" placeholder="outoff">
+    </div>
+    <br>
+    <button type="submit" class="bg-warning col-12">Save</button>
+    <br>
+    <br>
+    <div>
+    <label for="">Total marks</label>
+    <input type="text" value="{{t}}">
+    <input type="text" value="{{ot}}">
+    </div>
+    <br>
+    <div>
+    <label for="">persentage</label>
+    <input type="text" value="{{p}}">
+    </div>
+    <div>
+        <label for="">Grade :</label>
+        <input type="text" value="{{c}}">
+    </div>
+</form>
+
+{% endblock %}
